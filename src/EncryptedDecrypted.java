@@ -21,6 +21,6 @@ public class EncryptedDecrypted {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
+        Util.writeMessage("Файл по адресу " + result + (flag ? " зашифрован" : " расшифрован" ));
     }
 }

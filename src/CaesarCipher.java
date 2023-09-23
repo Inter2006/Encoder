@@ -23,8 +23,11 @@ public class CaesarCipher {
         return builder.toString();
     }
 
-    public String decrypt(String message, int key){
-    return encrypt(message, key * -1);
+    public String decrypt(String message, int key) {
+        return encrypt(message, key * -1);
     }
 
+    public int alphabetLength() {
+        return ALPHABET.length();
+    }
 }
